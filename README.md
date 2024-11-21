@@ -1,6 +1,6 @@
 # S. Khabane Lekena
 ## Software engineer 
-### Cloud | Graphics
+### Cloud Computing | Computer Graphics
 ![headshot](./images/0.jfif)
 
 The personal website of Khabane Lekena (mind the construction tape)

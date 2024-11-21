@@ -3,7 +3,7 @@
 ### Cloud | Graphics
 ![headshot](./images/0.jfif)
 
-The personal website of Khabane Lekena (under construction)
+The personal website of Khabane Lekena (mind the construction tape)
 
 ## Projects
 
@@ -13,5 +13,6 @@ The personal website of Khabane Lekena (under construction)
 
     [Key commits](https://github.com/yanniektan/finalCS248A/commits/main/)
 
+    [Render results video](https://drive.google.com/file/d/16-yf8OHVbA4jteHLW-T5Lo9SIPMCn7J_/view?usp=sharing)
 3. [Stanford CS248 Mesh Editor](https://github.com/Seretsi/MyCardinal3D/commits/master/)
 3. [Stanford CS248 Raytracer](https://github.com/Seretsi/Cardinal3DPathTracer/commits/master/)

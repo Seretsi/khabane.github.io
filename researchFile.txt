@@ -1,0 +1,68 @@
+create a website that will be hosted on github pages. It is for a graphics engineer. The aim is for it to be a visual resume eventually displaying graphics and AI projects.
+
+1. Use html, css, javascript.
+2. Prevent most hacking exploits on the site, including cross-site scripting.
+3. Have a table across the top with
+    a. Home
+    b. graphics
+    c. ML/AI
+4. the whole thing should be on one page.
+5. the button in the header tab, should skip navigation down to the appropriate section.
+
+For the home page:
+Add an animation background with snowfall particles cascading down. Particles should start falling from a location uniformly spread across the top of the browser.
+
+the graphics and ML/AI sections mutually should:
+1. List different projects in tables that contain:
+    a. a thumbnail to show quick picture for what the project is about
+    b. the title of the project
+    c. a quick abstract about the project
+
+Extra notes on implementation:
+
+1. Navigation Bar (Fixed Header)
+
+Home | Graphics | ML/AI | Contact
+Glassmorphism effect with blur backdrop
+Animated underline on hover
+Smooth scroll to sections
+
+2. Home Section
+
+Large gradient title: "Graphics Engineer"
+Subtitle describing specializations
+Full-viewport hero layout
+Snowfall particle animation background
+
+3. Graphics Projects Section
+
+## example project card
+
+4. ML/AI Projects Section
+
+## example project card
+
+5. Contact Section (NEW)
+
+Invitation text for collaboration
+Social links with icons:
+
+GitHub
+LinkedIn
+Twitter/X
+Shadertoy (great for graphics engineers!)
+
+
+
+6. Footer
+
+Copyright notice
+Subtle border separator
+
+
+Security Features
+
+Content Security Policy header
+rel="noopener noreferrer" on external links
+Strict mode JavaScript in IIFE
+No dynamic HTML injection

@@ -84,18 +84,21 @@
     }
     
     section {
-        min-height: 100vh;
-        padding: 100px 5% 60px;
+        min-height: auto;
+        padding: 88px 5% 60px;
+        scroll-margin-top: 60px;
         position: relative;
         z-index: 2;
     }
     
     #home {
+        min-height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+        padding-bottom: 2rem;
     }
     
     .hero-title {
@@ -118,7 +121,7 @@
     .section-title {
         font-size: 2.5rem;
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         position: relative;
     }
     
@@ -134,15 +137,23 @@
     
     .projects-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 2rem;
-        max-width: 1200px;
+        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+        gap: 1.6rem;
+        max-width: 960px;
         margin: 0 auto;
     }
     
+    /* Cards wrapped in a link inherit the card's own colors rather than
+       the browser's default link blue/underline. */
+    .projects-grid > a {
+        color: inherit;
+        text-decoration: none;
+        display: block;
+    }
+
     .project-card {
         background: var(--bg-card);
-        border-radius: 16px;
+        border-radius: 13px;
         overflow: hidden;
         border: 1px solid rgba(99, 102, 241, 0.15);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -155,22 +166,43 @@
     
     .project-thumbnail {
         width: 100%;
-        height: 200px;
-        object-fit: cover;
+        height: 160px;
         background: linear-gradient(135deg, #1e1e2e 0%, #2d2d44 100%);
         display: flex;
         align-items: center;
         justify-content: center;
         color: var(--text-muted);
         font-size: 3rem;
+        overflow: hidden;
     }
-    
-    .project-content { padding: 1.5rem; }
-    
+
+    /* Let a linked thumbnail fill the whole tile so the image is clickable */
+    .project-thumbnail a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .project-thumbnail img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* For transparent cutouts: show the whole subject on the gradient
+       instead of cropping it to fill the tile. */
+    .project-thumbnail--contain img {
+        object-fit: contain;
+        padding: 0.75rem 0;
+    }
+
+    .project-content { padding: 1.2rem; }
+
     .project-title {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         font-weight: 600;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.6rem;
         color: var(--text);
     }
     
@@ -192,7 +224,7 @@
     
     /* Contact Section */
     #contact {
-        min-height: auto;
+        /* min-height: auto; */
         padding-bottom: 100px;
     }
     
